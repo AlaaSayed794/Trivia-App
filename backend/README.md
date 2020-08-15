@@ -421,15 +421,14 @@ returned error codes:
 <sup>Alaa Sayed
 
 ## Acknowledgements 
-The awesome team at Udacity and all of the students, soon to be full stack extraordinaires!
-```
+The awesome team at Udacity and our coach Caryn Mccarthy
 
 
 ## Testing
 To run the tests, run
 ```
-dropdb trivia_test
-createdb trivia_test
-psql trivia_test < trivia.psql
-python test_flaskr.py
+	dropdb trivia_test
+	createdb trivia_test
+	psql trivia_test < trivia.psql
+	python test_flaskr.py
 ```
