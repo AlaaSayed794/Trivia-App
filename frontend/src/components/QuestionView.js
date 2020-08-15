@@ -111,7 +111,6 @@ class QuestionView extends Component {
           success: (result) => {
             //this handles the deletion of the last item in a page
             let maxPage = Math.ceil(result.total_questions / 10)
-            console.log(maxPage)
             if(maxPage<this.state.page)
             {
               this.setState({page:this.state.page-1})

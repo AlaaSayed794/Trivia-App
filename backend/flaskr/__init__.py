@@ -195,7 +195,7 @@ def create_app(test_config=None):
             'total_questions' : len(selection)
             })
     except Exception as e:
-      print(e)
+
       abort(422)
 
 
@@ -227,12 +227,10 @@ def create_app(test_config=None):
   @app.route('/quizzes', methods=['POST'])
   def get_quiz_question():
     body = request.get_json()
-    print(body)
     try:
       previous_questions = body.get('previous_questions')
 
-      #print(previous_questions)
-      print(body)
+      
       quiz_category = body.get('quiz_category')['id']
       
       
@@ -257,7 +255,6 @@ def create_app(test_config=None):
               'total_questions' : len(questions),
               })
     except Exception as e:
-      print(e)
       abort(400)
 
   '''
